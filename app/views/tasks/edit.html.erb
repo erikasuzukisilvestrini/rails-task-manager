@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Edit task</h1>
+
+  <%= render 'form', task: @task %>
+  <%= link_to 'back', tasks_path(@tasks), class: 'btn btn-sm btn-primary' %>
+
+  <%= button_to "Delete Task", @task, class: 'btn btn-sm btn-danger', :method => :delete, data: {confirm: 'Are you sure?'} %>
+</div>
